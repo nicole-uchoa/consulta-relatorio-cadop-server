@@ -16,10 +16,10 @@ class Resultado:
 #configurações psycopg2
 class ConexaoPsy:        
     def conexao():
-        host = "localhost"
-        dbname = "db_cadop"
-        user = "nicole"
-        password = "123456"
+        host = "ec2-44-198-29-193.compute-1.amazonaws.com"
+        dbname = "dcalhspopd9ds"
+        user = "xertmhoablqidi"
+        password = "6411ec3d9851376e7dd448310cf99ddd95b3d649d51ba67ce238aeea29d3a388"
         sslmode = "allow"
         conn_string = "host={0} user={1} dbname={2} password={3} sslmode={4}".format(host, user, dbname, password, sslmode)
         conn = psycopg2.connect(conn_string)
